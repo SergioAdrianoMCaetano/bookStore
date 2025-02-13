@@ -50,18 +50,19 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
-name = "django-rest-framework"
-version = "0.1.0"
-description = "alias."
+name = "django-extensions"
+version = "3.2.3"
+description = "Extensions for Django"
 optional = false
-python-versions = "*"
+python-versions = ">=3.6"
 groups = ["main"]
 files = [
-    {file = "django-rest-framework-0.1.0.tar.gz", hash = "sha256:47a8f496fa69e3b6bd79f68dd7a1527d907d6b77f009e9db7cf9bb21cc565e4a"},
+    {file = "django-extensions-3.2.3.tar.gz", hash = "sha256:44d27919d04e23b3f40231c4ab7af4e61ce832ef46d610cc650d53e68328410a"},
+    {file = "django_extensions-3.2.3-py3-none-any.whl", hash = "sha256:9600b7562f79a92cbf1fde6403c04fee314608fefbb595502e34383ae8203401"},
 ]
 
 [package.dependencies]
-djangorestframework = "*"
+Django = ">=3.2"
 
 [[package]]
 name = "djangorestframework"
@@ -226,4 +227,4 @@ markers = {main = "sys_platform == \"win32\""}
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.13"
-content-hash = "0ee20727935aa6ca0bf7b474b0deb468934978cf3fdbab299ccd2dd7985b0f36"
+content-hash = "4f54e4912154b34217c8d0e079a8390b81eeb34b323e56530c5e126f9a6c8704"
