@@ -1,9 +1,12 @@
 import json
+
 from rest_framework.test import APITestCase, APIClient
 from rest_framework.views import status
+
 from django.urls import reverse
+
 from product.factories import CategoryFactory, ProductFactory
-# Remover importação de UserFactory
+from order.factories import UserFactory
 from product.models import Product
 
 
@@ -11,11 +14,11 @@ class TestProductViewSet(APITestCase):
     client = APIClient()
 
     def setUp(self):
-        self.category = CategoryFactory()
+        self.user = UserFactory()
+
         self.product = ProductFactory(
             title='por controller',
             price=200.00,
-            category=[self.category]
         )
 
     def test_get_all_product(self):
